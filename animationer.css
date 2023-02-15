@@ -269,7 +269,7 @@
     transform: translate(150%, 150%) rotate(360deg);
   }
 }
-/* Forstår ikke det her squashing*/
+/* Forstår ikke det her squashing. Hjælp mig. Ples. Det gør ondt.*/
 .squash {
   animation-name: squash;
   animation-duration: 3s;
