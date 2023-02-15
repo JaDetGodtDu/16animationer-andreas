@@ -1,0 +1,297 @@
+/* Animation 1: Falling
+   Bolden falder konstant fra oven. */
+.falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+.bouncing {
+  animation-name: bouncing;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes bouncing {
+  0% {
+    transform: translate(0, -200%);
+  }
+
+  50% {
+    transform: translate(0, 150%);
+  }
+  100% {
+    transform: translate(0, -200%);
+  }
+}
+.drop {
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes drop {
+  0% {
+    transform: translate(0, -200%);
+  }
+
+  100% {
+    transform: translate(0, 150%);
+  }
+}
+.pattern {
+  animation-name: pattern;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes pattern {
+  0% {
+    transform: translate(0, -150%);
+  }
+  25% {
+    transform: translate(-150%, 0);
+  }
+  50% {
+    transform: translate(0, 150%);
+  }
+  75% {
+    transform: translate(150%, 0);
+  }
+  100% {
+    transform: translate(0, -150%);
+  }
+}
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom_out {
+  0% {
+    scale: 3;
+  }
+  100% {
+    scale: 0.1;
+  }
+}
+.zoom_in {
+  animation-name: zoom_in;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom_in {
+  0% {
+    scale: 0.1;
+  }
+  100% {
+    scale: 6;
+  }
+}
+.fade_out {
+  animation-name: fade_out;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes fade_out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.fade_in {
+  animation-name: fade_in;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.rotation {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotation2 {
+  animation-name: rotation2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0deg) translate(125%);
+  }
+  100% {
+    transform: rotate(360deg) translate(125%);
+  }
+}
+.glow {
+  border-radius: 50%;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 5px -3px yellow;
+  }
+  100% {
+    box-shadow: 0px 0px 5px 10px yellow;
+  }
+}
+.blur_to_gray {
+  animation-name: blur_to_gray;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blur_to_gray {
+  0% {
+    transform: translate(150%, 0);
+  }
+  100% {
+    transform: translate(-150%, 0);
+    filter: grayscale(100) blur(2px);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.overshoot {
+  animation-name: overshoot;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68, 0.31, 0.58, 1.74);
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes overshoot {
+  0% {
+    transform: translate(-200%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(150%, 0) rotate(360deg);
+  }
+}
+.bounce {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(-150%, -150%) rotate(0deg);
+  }
+  10% {
+    transform: translate(-100%, 150%) rotate(32.72deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(65.45deg);
+  }
+  30% {
+    transform: translate(-25%, 150%) rotate(98.18deg);
+  }
+  40% {
+    transform: translate(0%, 0%) rotate(130.909deg);
+  }
+  50% {
+    transform: translate(25%, 150%) rotate(163.63deg);
+  }
+  60% {
+    transform: translate(50%, 25%) rotate(196.36deg);
+  }
+  70% {
+    transform: translate(75%, 150%) rotate(229.09deg);
+  }
+  80% {
+    transform: translate(100%, 50%) rotate(261.818deg);
+  }
+  90% {
+    transform: translate(125%, 150%) rotate(294.545deg);
+  }
+  95% {
+    transform: translate(150%, 100%) rotate(327.27deg);
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(360deg);
+  }
+}
+/* Forstår ikke det her squashing*/
+.squash {
+  animation-name: squash;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes squash {
+  0% {
+    transform: translate(0, -150%);
+  }
+
+  25% {
+    transform: translate(-150%, 0);
+  }
+
+  50% {
+    transform: translate(0, 150%);
+  }
+  75% {
+    transform: translate(150%, 0);
+  }
+  100% {
+    transform: translate(0, -150%);
+  }
+}
